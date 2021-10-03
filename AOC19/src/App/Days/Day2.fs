@@ -61,7 +61,7 @@ let rec part2 (instructions: int64 array) =
                 if solve noun verb = 19690720L then
                     100L * noun + verb } |> Seq.head |> printfn "Part 2 %i" 
 
-let run =
+let run() =
     let instructions = getInstructions "Files/day2.txt"
     Array.copy instructions |> part1
     Array.copy instructions |> part2

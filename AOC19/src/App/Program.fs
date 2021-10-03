@@ -2,8 +2,8 @@ open System
 
 let executeDay n =
     match n with
-    | "1" -> Day1.run
-    | "2" -> Day2.run
+    | "1" -> Day1.run()
+    | "2" -> Day2.run()
     | _ -> Console.WriteLine "Invalid Option"
 
 let rec promptUser () =
@@ -16,6 +16,7 @@ let rec promptUser () =
         | "q" -> 0
         | _ ->
             executeDay input
+            Console.WriteLine()
             promptUser ()
     with
     | ex ->
@@ -23,4 +24,4 @@ let rec promptUser () =
         1
 
 [<EntryPoint>]
-let main argv = promptUser ()
+let main argv = promptUser()

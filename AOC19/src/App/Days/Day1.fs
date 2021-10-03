@@ -22,7 +22,7 @@ let part2 input =
     Seq.sumBy requiredFuel2 input
     |> printfn "Part 2 %i"
 
-let run =
+let run() =
     let input = getModules "Files/day1.txt" 
     part1 input
     part2 input
