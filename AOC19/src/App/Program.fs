@@ -3,6 +3,7 @@ open System
 let executeDay n =
     match n with
     | "1" -> Day1.run
+    | "2" -> Day2.run
     | _ -> Console.WriteLine "Invalid Option"
 
 let rec promptUser () =
